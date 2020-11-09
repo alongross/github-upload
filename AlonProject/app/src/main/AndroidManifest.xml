@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.student.myapplication5">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Choosing_Workout" />
+        <activity android:name=".Choosing_Exercises" />
+        <activity android:name=".ListView_LegsAbs_FirstWo" />
+        <activity android:name=".ListView_LegsAbs_SecondWo" />
+        <activity android:name=".ListView_Arms_FirstWo" />
+        <activity android:name=".ListView__Arms_SecondWo" />
+        <activity android:name=".ListView_Back_FirstWo" />
+        <activity android:name=".ListView_Back_SecondWo" />
+        <activity android:name=".ListView_ChestShoulders_FirstWo" />
+        <activity android:name=".ListView_ChestShoulders_SecondWo" />
+        <activity android:name=".End_Beginning" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".signup" />
+        <activity android:name=".information" />
+        <activity android:name=".end"></activity>
+        <service android:name=".SoundService" android:enabled="true"/>
+        <receiver android:name=".Notification_reciver"/>
+    </application>
+
+</manifest>
